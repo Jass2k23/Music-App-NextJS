@@ -12,10 +12,28 @@ const Navbar = ({ className }: { className?: string }) => {
       className={cn("fixed top-20 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
+        {/* Home */}
         <MenuItem setActive={setActive} active={active} item="Home"></MenuItem>
+
+        {/* Our Courses */}
         <MenuItem setActive={setActive} active={active} item="Our Courses">
-          <HoveredLink href="/">All Courses</HoveredLink>
+          <div className="flex flex-col gap-2">
+            <HoveredLink href="/">All Courses</HoveredLink>
+            <HoveredLink href="/">Basic Music Theory</HoveredLink>
+            <HoveredLink href="/">Advanced Composition</HoveredLink>
+            <HoveredLink href="/">Song Writing</HoveredLink>
+            <HoveredLink href="/">Music Production</HoveredLink>
+          </div>
         </MenuItem>
+
+        {/* Contact Us */}
+        <Link href="/">
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Contact Us"
+          ></MenuItem>
+        </Link>
       </Menu>
     </div>
   );
