@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import FeaturedCourses from "@/components/FeaturedCourses";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ type Props = {
 };
 
 export default function RootLayout({ children }: Readonly<Props>) {
+  // Readonly<{children: React.ReactNode}
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
@@ -24,9 +26,6 @@ export default function RootLayout({ children }: Readonly<Props>) {
         <div className="relative w-full flex items-center justify-center">
           <Navbar />
         </div>
-
-        {/* Hero Section */}
-        <HeroSection />
 
         {children}
       </body>
