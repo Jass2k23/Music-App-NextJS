@@ -10,8 +10,8 @@ const data = courseData[0].courses;
 
 function page() {
   return (
-    <div className="min-h-screen bg-black py-12 pt-40">
-      <h1 className="text-2xl md:text-7xl text-center font-sans font-bold mb-8 text-white">
+    <div className="min-h-screen bg-black dark:bg-grid-white/[0.2] py-12 pt-40">
+      <h1 className="text-2xl md:text-7xl text-center font-sans font-bold mb-10 text-white">
         All Courses ({data.length})
       </h1>
 

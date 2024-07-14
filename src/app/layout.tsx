@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/FeaturedCourses";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,9 @@ export default function RootLayout({ children }: Readonly<Props>) {
         </div>
 
         {children}
+
+        {/* Footer Component */}
+        <Footer />
       </body>
     </html>
   );

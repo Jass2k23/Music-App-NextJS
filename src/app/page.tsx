@@ -27,8 +27,6 @@ export default function Home() {
       {/* Instructor Section */}
       <Instructors />
 
-      {/* Footer Section */}
-      <Footer />
     </main>
   );
 }
