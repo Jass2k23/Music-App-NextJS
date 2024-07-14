@@ -99,7 +99,18 @@
         "instructor": "Ethan Moore",
         "isFeatured": true,
         "image": "/courses/blues.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Advanced Blues Guitar Techniques",
+        "slug": "advanced-blues-guitar-techniques",
+        "description": "Explore advanced techniques in blues guitar to enhance your playing with greater expressiveness and emotion.",
+        "price": 199.99,
+        "instructor": "Jordan Smith",
+        "isFeatured": true,
+        "image": "/courses/advanced-blues.jpg"
       }
+      
     ]
   }
 ]
