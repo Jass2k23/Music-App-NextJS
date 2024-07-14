@@ -13,12 +13,18 @@ const Navbar = ({ className }: { className?: string }) => {
     >
       <Menu setActive={setActive}>
         {/* Home */}
-        <MenuItem setActive={setActive} active={active} item="Home"></MenuItem>
+        <Link href={"/"}>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Home"
+          ></MenuItem>
+        </Link>
 
         {/* Our Courses */}
         <MenuItem setActive={setActive} active={active} item="Our Courses">
           <div className="flex flex-col gap-2">
-            <HoveredLink href="/">All Courses</HoveredLink>
+            <HoveredLink href="/courses">All Courses</HoveredLink>
             <HoveredLink href="/">Basic Music Theory</HoveredLink>
             <HoveredLink href="/">Advanced Composition</HoveredLink>
             <HoveredLink href="/">Song Writing</HoveredLink>
@@ -27,7 +33,7 @@ const Navbar = ({ className }: { className?: string }) => {
         </MenuItem>
 
         {/* Contact Us */}
-        <Link href="/">
+        <Link href="/contact">
           <MenuItem
             setActive={setActive}
             active={active}
